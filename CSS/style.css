@@ -1,0 +1,1168 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Black+Han+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background: #1c1c1c;
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.pt1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  width: 165px;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  color: orange;
+  padding: 1rem 0 0 0.5rem;
+  width: 165px;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  color: orange;
+  font-weight: 100;
+  width: 165px;
+  padding-left: 1.7rem;
+}
+
+.whatsapp {
+  width: 206px;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.button {
+  padding: 0.2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  text-decoration: none;
+  color: #1c1c1c;
+  background-color: orange;
+  border-radius: 15px;
+}
+
+/* Parte 2 */
+
+.banner {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.hidden {
+  opacity: 0;
+  height: 250px;
+  width: 100%;
+  margin-top: 2rem;
+  background-color: #1c1c1c;
+  background-image: linear-gradient(180deg, #222222, #1c1c1c);
+  border-radius: 50px;
+  filter: blur(20px);
+  transition: all 1.5s;
+  transform: translateY(100%);
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0px);
+  transition: all 1.5s;
+  transform: translateY(0);
+}
+
+.last {
+  margin: 2rem 0 0 2.5rem;
+  width: 200px;
+}
+
+/* Parte 3 */
+
+.text {
+  color: white;
+  text-align: justify;
+  font-weight: 100;
+  font-size: 1rem;
+  padding: 1rem 1rem;
+  filter: blur(20px);
+  transition: all 1.5s;
+  transform: translateX(-100%);
+}
+
+.aparecer {
+  opacity: 1;
+  filter: blur(0px);
+  transition: all 1.5s;
+  transform: translateY(0);
+}
+
+/* Parte 4 */
+.arte {
+  width: 150px;
+}
+
+.photo {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-radius: 10px;
+  filter: blur(20px);
+  transition: all 1.5s;
+  transform: translateX(-100%);
+}
+
+.aparecer2 {
+  opacity: 1;
+  filter: blur(0px);
+  transition: all 1.5s;
+  transform: translateY(0);
+  padding: 0.5rem;
+  margin: auto;
+}
+
+.photo2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  border-radius: 10px;
+  filter: blur(20px);
+  transition: all 1.5s;
+  transform: translateX(-100%);
+}
+
+.aparecer2 {
+  opacity: 1;
+  filter: blur(0px);
+  transition: all 1.5s;
+  transform: translateY(0);
+  padding: 0.5rem;
+  margin: auto;
+}
+
+/* Parte 5 */
+.text2 {
+  text-align: center;
+  color: white;
+  font-weight: 900;
+  padding: 3rem 2rem 1rem 2rem;
+}
+
+.portifolio {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-top: 2rem;
+}
+
+.buttom {
+  padding: 0.5rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: #1c1c1c;
+  background-color: orange;
+  border-radius: 25px;
+}
+
+/* Parte 6 */
+.pe {
+  margin-top: 5rem;
+  background-color: orange;
+  height: 100px;
+  width: 100%;
+}
+
+.rede {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.icon {
+  margin-top: 1.7rem;
+}
+
+@media screen and (min-width: 375px) {
+  .content {
+    max-width: 375px;
+    margin: 0 auto;
+  }
+
+  /* Parte 1 */
+  .name {
+    display: flex;
+    flex-direction: column;
+    width: 187.5px;
+  }
+
+  .whatsapp {
+    width: 187.5px;
+    text-align: center;
+    margin-top: 25px;
+  }
+
+  /* Parte 2 */
+
+  .last {
+    margin: 2rem 0 0 2.5rem;
+    width: 260px;
+  }
+
+  .hidden {
+    height: 300px;
+  }
+
+  /* Parte 4 */
+  .photo {
+    justify-content: space-around;
+  }
+
+  .photo2 {
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .content {
+    max-width: 425px;
+    margin: 0 auto;
+  }
+
+  /* Parte 1 */
+  .name {
+    display: flex;
+    flex-direction: column;
+    width: 212.5px;
+    padding-left: 1rem;
+  }
+
+  .whatsapp {
+    width: 212.5px;
+    text-align: center;
+    margin-top: 25px;
+  }
+
+  /* Parte 2 */
+
+  .last {
+    margin: 2rem 0 0 2.5rem;
+    width: 300px;
+  }
+
+  .hidden {
+    height: 350px;
+  }
+
+  /* Parte 4 */
+  .photo {
+    justify-content: space-around;
+  }
+
+  .photo2 {
+    justify-content: space-around;
+  }
+
+  .arte {
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .content {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+  /* Parte 1 */
+  .name {
+    display: flex;
+    flex-direction: column;
+    width: 384px;
+    padding-left: 2rem;
+  }
+
+  .whatsapp {
+    width: 384px;
+    text-align: end;
+    margin-top: 25px;
+    padding-right: 2rem;
+  }
+
+  .button {
+    font-size: 17px;
+    padding: 0.7rem;
+    border-radius: 35px;
+  }
+
+  /* Parte 2 */
+
+  .last {
+    margin: 2rem 0 0 4rem;
+    width: 550px;
+  }
+
+  .hidden {
+    height: 600px;
+  }
+
+  /* Parte 3*/
+  .text {
+    font-size: 30px;
+    padding: 1rem 1.5rem;
+  }
+
+  /* Parte 4 */
+  .photo {
+    justify-content: space-around;
+  }
+
+  .photo2 {
+    justify-content: space-around;
+    margin-top: 2rem;
+  }
+
+  .arte {
+    width: 300px;
+  }
+
+  /* Parte 6 */
+  .text2 {
+    font-size: 30px;
+    padding-top: 5rem;
+  }
+
+  .buttom {
+    padding: 1rem 2rem;
+    border-radius: 35px;
+    font-size: 25px;
+  }
+
+  .portifolio {
+    padding-top: 5rem;
+  }
+
+  .pe {
+    margin-top: 150px;
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  .content {
+    max-width: 1020px;
+    margin: 0 auto;
+  }
+
+  /* Parte 1 */
+  .pt1 {
+    margin-bottom: 50px;
+  }
+
+  .name {
+    display: flex;
+    flex-direction: column;
+    width: 510px;
+    padding-left: 2rem;
+  }
+
+  .whatsapp {
+    width: 510px;
+    text-align: end;
+    margin-top: 35px;
+    padding-right: 2rem;
+  }
+
+  h1 {
+    font-size: 25px;
+    width: 350px;
+  }
+
+  h3 {
+    font-size: 25px;
+    width: 350px;
+    padding-left: 2.4rem;
+  }
+
+  .button {
+    font-size: 17px;
+    padding: 0.7rem;
+    border-radius: 35px;
+  }
+
+  .banner {
+    margin: auto;
+    display: block;
+    width: 940px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+  }
+
+  /* Parte 2 */
+
+  .last {
+    margin: 2rem 0 0 2rem;
+    width: 450px;
+  }
+
+  .hidden {
+    position: absolute;
+    height: 600px;
+    width: 940px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 50%;
+  }
+
+  /* Parte 3*/
+  .text {
+    font-size: 30px;
+    margin: 2% 0 0 11.5rem;
+    width: 500px;
+    align-items: end;
+  }
+
+  /* Parte 4 */
+  .photo {
+    justify-content: space-evenly;
+    margin-top: 15%;
+  }
+
+  .photo2 {
+    justify-content: space-evenly;
+    margin-top: 8%;
+  }
+
+  .arte {
+    width: 300px;
+  }
+
+  /* Parte 6 */
+  .text2 {
+    font-size: 30px;
+    padding-top: 5rem;
+  }
+
+  .buttom {
+    padding: 1rem 2rem;
+    border-radius: 35px;
+    font-size: 25px;
+  }
+
+  .portifolio {
+    padding-top: 5rem;
+  }
+
+  .pe {
+    margin-top: 150px;
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  .content {
+    max-width: 1020px;
+    margin: 0 auto;
+  }
+
+  /* Parte 1 */
+  .pt1 {
+    margin-bottom: 50px;
+  }
+
+  .name {
+    display: flex;
+    flex-direction: column;
+    width: 510px;
+    padding-left: 2rem;
+  }
+
+  .whatsapp {
+    width: 510px;
+    text-align: end;
+    margin-top: 35px;
+    padding-right: 2rem;
+  }
+
+  h1 {
+    font-size: 25px;
+    width: 350px;
+  }
+
+  h3 {
+    font-size: 25px;
+    width: 350px;
+    padding-left: 2.4rem;
+  }
+
+  .button {
+    font-size: 17px;
+    padding: 0.7rem;
+    border-radius: 35px;
+  }
+
+  .banner {
+    margin: auto;
+    display: block;
+    width: 940px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+  }
+
+  /* Parte 2 */
+
+  .last {
+    margin: 2rem 0 0 2rem;
+    width: 450px;
+  }
+
+  .hidden {
+    position: absolute;
+    height: 600px;
+    width: 940px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 40%;
+  }
+
+  /* Parte 3*/
+  .text {
+    font-size: 30px;
+    margin: 5% 0 0 34%;
+    width: 500px;
+    align-items: end;
+  }
+
+  /* Parte 4 */
+  .photo {
+    justify-content: space-evenly;
+    margin-top: 15%;
+  }
+
+  .photo2 {
+    justify-content: space-evenly;
+    margin-top: 8%;
+  }
+
+  .arte {
+    width: 350px;
+  }
+
+  /* Parte 6 */
+  .text2 {
+    font-size: 30px;
+    padding-top: 5rem;
+  }
+
+  .buttom {
+    padding: 1rem 2rem;
+    border-radius: 35px;
+    font-size: 25px;
+  }
+
+  .portifolio {
+    padding-top: 5rem;
+  }
+
+  .pe {
+    margin-top: 150px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .content {
+    max-width: 1366px;
+    margin: 0 auto;
+  }
+
+  /* Parte 1 */
+  .pt1 {
+    margin-bottom: 50px;
+  }
+
+  .name {
+    display: flex;
+    flex-direction: column;
+    width: 510px;
+    padding-left: 2rem;
+  }
+
+  .whatsapp {
+    width: 510px;
+    text-align: end;
+    margin-top: 35px;
+    padding-right: 2rem;
+  }
+
+  h1 {
+    font-size: 25px;
+    width: 350px;
+  }
+
+  h3 {
+    font-size: 25px;
+    width: 350px;
+    padding-left: 2.4rem;
+  }
+
+  .button {
+    font-size: 17px;
+    padding: 0.7rem;
+    border-radius: 35px;
+  }
+
+  .banner {
+    margin: auto;
+    display: block;
+    width: 940px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+  }
+
+  /* Parte 2 */
+
+  .last {
+    margin: 2rem 0 0 2rem;
+    width: 450px;
+  }
+
+  .hidden {
+    position: absolute;
+    height: 600px;
+    width: 940px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 35%;
+  }
+
+  /* Parte 3*/
+  .text {
+    font-size: 25px;
+    margin: 8% 0 0 37%;
+    width: 450px;
+    align-items: end;
+  }
+
+  /* Parte 4 */
+  .photo {
+    justify-content: space-evenly;
+    margin-top: 15%;
+  }
+
+  .photo2 {
+    justify-content: space-evenly;
+    margin-top: 8%;
+  }
+
+  .arte {
+    width: 350px;
+  }
+
+  /* Parte 6 */
+  .text2 {
+    font-size: 30px;
+    padding-top: 5rem;
+  }
+
+  .buttom {
+    padding: 1rem 2rem;
+    border-radius: 35px;
+    font-size: 25px;
+  }
+
+  .portifolio {
+    padding-top: 5rem;
+  }
+
+  .pe {
+    margin-top: 150px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .content {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  /* Parte 1 */
+  .pt1 {
+    margin-bottom: 50px;
+  }
+
+  .name {
+    display: flex;
+    flex-direction: column;
+    width: 720px;
+    padding-left: 13rem;
+  }
+
+  .whatsapp {
+    width: 720px;
+    text-align: end;
+    margin-top: 45px;
+    padding-right: 13rem;
+  }
+
+  h1 {
+    padding-top: 1.5rem;
+    font-size: 25px;
+    width: 350px;
+  }
+
+  h3 {
+    font-size: 25px;
+    width: 350px;
+    padding-left: 2.4rem;
+  }
+
+  .button {
+    font-size: 17px;
+    padding: 0.7rem;
+    border-radius: 35px;
+  }
+
+  .banner {
+    margin: auto;
+    display: block;
+    width: 940px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+  }
+
+  /* Parte 2 */
+
+  .last {
+    margin: 2rem 0 0 1.5rem;
+    width: 450px;
+  }
+
+  .hidden {
+    position: absolute;
+    height: 600px;
+    width: 940px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 25%;
+  }
+
+  /* Parte 3*/
+  .text {
+    font-size: 26.2px;
+    margin: 3rem 0 0 16.9rem;
+    width: 470px;
+    align-items: end;
+  }
+
+  /* Parte 4 */
+  .photo {
+    justify-content: space-around;
+    margin-top: 10rem;
+    width: 940px;
+  }
+
+  .photo2 {
+    justify-content: space-around;
+    margin-top: 2rem;
+    width: 940px;
+  }
+
+  .arte {
+    width: 400px;
+  }
+
+  /* Parte 6 */
+  .text2 {
+    font-size: 40px;
+    padding-top: 7rem;
+  }
+
+  .buttom {
+    padding: 1rem 3rem;
+    border-radius: 45px;
+    font-size: 40px;
+  }
+
+  .portifolio {
+    padding-top: 5rem;
+  }
+
+  .pe {
+    margin-top: 150px;
+  }
+}
+
+@media screen and (min-width: 1860px) {
+  .content {
+    max-width: 1860px;
+    margin: 0 auto;
+  }
+
+  /* Parte 1 */
+  .name {
+    display: flex;
+    flex-direction: column;
+    width: 960px;
+    padding: 3rem 10rem;
+  }
+
+  .whatsapp {
+    width: 960px;
+    text-align: end;
+    margin-top: 0px;
+    padding-right: 10rem;
+  }
+
+  h1 {
+    font-size: 25px;
+    width: 350px;
+    padding: 0;
+  }
+
+  h3 {
+    font-size: 25px;
+    width: 350px;
+    padding-left: 2rem;
+  }
+
+  .button {
+    font-size: 17px;
+    font-size: 25px;
+    padding: 1rem 2rem;
+  }
+
+  .banner {
+    margin: auto;
+    display: block;
+    width: 1500px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+  }
+
+  /* Parte 2 */
+
+  .hidden {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1500px;
+    position: absolute;
+    height: 750px;
+    margin-top: 42%;
+  }
+
+  .last {
+    margin: 2rem 0 0 2rem;
+    width: 700px;
+  }
+
+  /* Parte 3*/
+  .text {
+    font-size: 42px;
+    margin: 4rem 0 0 22rem;
+    width: 750px;
+    align-items: end;
+  }
+
+  /* Parte 4 */
+  .photo {
+    margin-top: 10rem;
+    width: 940px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+  }
+
+  .photo2 {
+    margin-top: 3rem;
+    width: 940px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+  }
+
+  .arte {
+    width: 500px;
+  }
+
+  /* Parte 6 */
+  .text2 {
+    font-size: 40px;
+    padding-top: 7rem;
+  }
+
+  .buttom {
+    padding: 1rem 3rem;
+    border-radius: 45px;
+    font-size: 40px;
+  }
+
+  .portifolio {
+    padding-top: 5rem;
+  }
+
+  .pe {
+    margin-top: 150px;
+  }
+}
+
+@media screen and (min-width: 1880px) {
+  .content {
+    max-width: 1880px;
+    margin: 0 auto;
+  }
+
+  /* Parte 1 */
+  .name {
+    display: flex;
+    flex-direction: column;
+    width: 960px;
+    padding: 3rem 10rem;
+  }
+
+  .whatsapp {
+    width: 960px;
+    text-align: end;
+    margin-top: 0px;
+    padding-right: 10rem;
+  }
+
+  h1 {
+    font-size: 25px;
+    width: 350px;
+    padding: 0;
+  }
+
+  h3 {
+    font-size: 25px;
+    width: 350px;
+    padding-left: 2rem;
+  }
+
+  .button {
+    font-size: 17px;
+    font-size: 25px;
+    padding: 1rem 2rem;
+  }
+
+  .banner {
+    margin: auto;
+    display: block;
+    width: 1500px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+  }
+
+  /* Parte 2 */
+
+  .hidden {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1500px;
+    position: absolute;
+    height: 750px;
+  }
+
+  .last {
+    margin: 2rem 0 0 2rem;
+    width: 700px;
+  }
+
+  /* Parte 3*/
+  .text {
+    font-size: 42px;
+    margin: 3rem 0 0 22rem;
+    width: 750px;
+    align-items: end;
+  }
+
+  /* Parte 4 */
+  .photo {
+    margin-top: 10rem;
+    width: 940px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+  }
+
+  .photo2 {
+    margin-top: 3rem;
+    width: 940px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+  }
+
+  .arte {
+    width: 550px;
+  }
+
+  /* Parte 6 */
+  .text2 {
+    font-size: 40px;
+    padding-top: 7rem;
+  }
+
+  .buttom {
+    padding: 1rem 3rem;
+    border-radius: 45px;
+    font-size: 40px;
+  }
+
+  .portifolio {
+    padding-top: 5rem;
+  }
+
+  .pe {
+    margin-top: 150px;
+  }
+}
+
+
+@media screen and (min-width: 1920px) {
+  .content {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+
+  /* Parte 1 */
+  .name {
+    display: flex;
+    flex-direction: column;
+    width: 960px;
+    padding: 3rem 10rem;
+  }
+
+  .whatsapp {
+    width: 960px;
+    text-align: end;
+    margin-top: 0px;
+    padding-right: 10rem;
+  }
+
+  h1 {
+    font-size: 25px;
+    width: 350px;
+    padding: 0;
+  }
+
+  h3 {
+    font-size: 25px;
+    width: 350px;
+    padding-left: 2rem;
+  }
+
+  .button {
+    font-size: 17px;
+    font-size: 25px;
+    padding: 1rem 2rem;
+  }
+
+  .banner {
+    margin: auto;
+    display: block;
+    width: 1500px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+  }
+
+  /* Parte 2 */
+
+  .hidden {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1500px;
+    position: absolute;
+    height: 750px;
+  }
+
+  .last {
+    margin: 2rem 0 0 2rem;
+    width: 700px;
+  }
+
+  /* Parte 3*/
+  .text {
+    font-size: 42px;
+    margin: 10% 0 0 22rem;
+    width: 750px;
+    align-items: end;
+  }
+
+  /* Parte 4 */
+  .photo {
+    margin-top: 10rem;
+    width: 940px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+  }
+
+  .photo2 {
+    margin-top: 3rem;
+    width: 940px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+  }
+
+  .arte {
+    width: 550px;
+  }
+
+  /* Parte 6 */
+  .text2 {
+    font-size: 40px;
+    padding-top: 7rem;
+  }
+
+  .buttom {
+    padding: 1rem 3rem;
+    border-radius: 45px;
+    font-size: 40px;
+  }
+
+  .portifolio {
+    padding-top: 5rem;
+  }
+
+  .pe {
+    margin-top: 150px;
+  }
+}
